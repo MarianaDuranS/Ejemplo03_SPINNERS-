@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ejemplo03_SPINNERS</string>
+    <string name="txt_Titulo">Conversor unidades de temperatura</string>
+    <string name="txtConvertir">Convertir</string>
+    <string name="txtA">A:</string>
+    <string name="hint_caja_grados1">Ingresa grados a convertir</string>
+    <string name="hint_caja_resultados">Resultado</string>
+</resources>

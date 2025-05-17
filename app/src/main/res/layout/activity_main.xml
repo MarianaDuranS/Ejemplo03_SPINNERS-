@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_convertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="250dp"
+        android:text="@string/txtConvertir"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/caja_grados1"
+        android:layout_width="138dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:hint="@string/hint_caja_grados1"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_grados1"
+        app:layout_constraintStart_toEndOf="@+id/txt_convertir"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_grados1"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/caja_grados1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="13dp"
+        android:text="@string/txtA"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_grados2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_convertir" />
+
+    <Spinner
+        android:id="@+id/spinner_grados2"
+        android:layout_width="155dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/caja_resultados"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/caja_grados1" />
+
+    <EditText
+        android:id="@+id/caja_resultados"
+        android:layout_width="197dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:hint="@string/hint_caja_resultados"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caja_grados1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/txt_Titulo"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
